@@ -47,6 +47,7 @@ public class BuildTest extends BaseFramework {
 		// Maximize the window
 		driver.manage().window().maximize();
 		homePage = new HomePage(driver, wait);
+		homePage.clickCloseEmailAddressPopUp();
 		
 		//type productId and click Search Button
 		homePage.typeSearchText(getConfiguration("TC_1_productId"));
@@ -71,6 +72,7 @@ public class BuildTest extends BaseFramework {
 		// Maximize the window
 		driver.manage().window().maximize();
 		bathroomSinkPage = new BathroomSinkPage(driver, wait);
+		bathroomSinkPage.clickCloseEmailAddressPopUp();
 		String productTitle=bathroomSinkPage.getProductTitle(2);
 		
 		//Click on the 2nd Product 
@@ -102,6 +104,7 @@ public class BuildTest extends BaseFramework {
 		// Maximize the window
 		driver.manage().window().maximize();
 		bathroomSinkPage = new BathroomSinkPage(driver, wait);
+		bathroomSinkPage.clickCloseEmailAddressPopUp();
 		String productTitle=bathroomSinkPage.getProductTitle(2);
 		
 		//Click on the 2nd Product 
@@ -153,6 +156,7 @@ public class BuildTest extends BaseFramework {
 		// Maximize the window
 		driver.manage().window().maximize();
 		bathroomSinkFaucetsPage = new BathroomSinkFaucetsPage(driver, wait);
+		bathroomSinkFaucetsPage=bathroomSinkFaucetsPage.clickCloseEmailAddressPopUp();
 		
 		//Filter the bathroomsink faucets using proper filter option
 		String initialCount=bathroomSinkFaucetsPage.getFilterCount(getConfiguration("TC_4_filterGroup1"), getConfiguration("TC_4_filterValue1"));

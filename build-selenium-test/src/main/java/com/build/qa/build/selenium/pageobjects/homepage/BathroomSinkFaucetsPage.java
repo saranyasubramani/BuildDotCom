@@ -17,7 +17,7 @@ public class BathroomSinkFaucetsPage extends BasePage {
 	private String chkboxFilter="li[data-groupname='%s']>ul>li>label[data-facet-value='%s']>input";	
 	private String lblFilterCount="li[data-groupname='%s']>ul>li>label[data-facet-value='%s']>span";
 	private By lblTotalNumOfProductsOnPage=By.cssSelector("span[class='js-num-results']");
-	private By lblNorrowedFilters=By.cssSelector("div[class='limit-facet-item']>span:nth-child(2)");
+	private By lblNorrowedFilters=By.cssSelector("div[class*='limit-facet-item']>span:nth-child(2)");
 	
 	public BathroomSinkFaucetsPage(WebDriver driver, Wait<WebDriver> wait) {
 		super(driver, wait);

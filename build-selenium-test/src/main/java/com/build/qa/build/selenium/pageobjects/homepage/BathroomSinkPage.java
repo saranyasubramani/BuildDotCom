@@ -12,7 +12,6 @@ public class BathroomSinkPage extends BasePage {
 	private By buildThemeBody;
 	private String lblProductTitle="ul[id='category-product-drop']>li:nth-child(%s)>div[class='product-tile']>a>*>div[class*='product-title']";
 	private String lblProductCategory="a[href*='%s']>div>h5";
-	//private By lblProductTitle=By.cssSelector("div[class='product-title']:nth-child('%s')");
 		
 	public BathroomSinkPage(WebDriver driver, Wait<WebDriver> wait) {
 		super(driver, wait);
